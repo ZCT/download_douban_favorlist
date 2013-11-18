@@ -8,6 +8,7 @@ download_douban_favorlist
 第一次用，本地列表应该为空（因为下载的音乐中会在其中加入tag信息，用于和豆瓣红心歌单对比的），也就是说本地列表中的歌曲必须是 经由本程序下载的才能进行对比。
 
 主程序是request_download.py
+
 在thread.py中，1 DistrubeThread线程负责解析url，获取下载地址（这类线程只有一个）。
 
                2 DownThread线程负责下载歌曲（根据任务的数量，会自动派生线程来下载）。
